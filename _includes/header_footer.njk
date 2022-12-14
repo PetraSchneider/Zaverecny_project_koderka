@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Nodle House - Plzeň</title>
+</head>
+<body>
+<header class="header">
+        <h1 class="header__title">Noodle House <br> {{ title }}</h1>
+        <nav class="header__tabs">                
+                <a class="button" href="/">úvod</a>
+                <a class="button" href="/Jidelni_listek/">jídelní lístek</a>
+                <a class="button" href="/Rezervace/">Rezervace</a>
+                <a class="button" href="/Kontakty/">Kontakty</a>
+                <a class="button" href="/Recenze/">Recenze</a>
+        </nav>
+</header>
+{{ content | safe }}
+<footer class="footer">
+    <h4 class="footer__title">Závěrečný projekt kurzu Kóderka od Czechitas</h4>
+    <a class="footer__button" href="https://www.czechitas.cz/">czechitas</a>
+    <h4 class="footer__title">Autro projektu</h4>
+    <p class="footer__text">Petra Schneiderová</p>
+    <h4 class="footer__title">Vytvoření webu</h4>
+    <p class="footer__text">prosinec 2022</p>
+</footer>
+</body>
+</html>

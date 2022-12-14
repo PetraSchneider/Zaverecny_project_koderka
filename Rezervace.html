@@ -1,0 +1,34 @@
+---
+layout: header_footer.njk
+title: Rezervace
+---
+    <section class="section">
+        <div class="section__form">
+            <form method="post">
+                <label class="section__lable" for="jmeno">Jméno</label>
+              <input class="section__input" type="text" name="jmeno" id="jmeno">
+                <label class="section__lable" for="prijmeni">Příjmení</label>
+              <input class="section__input" type="text" name="prijemni" id="prijmeni">
+                <label class="section__lable" for="telefoni_cislo">Telefoní číslo</label>
+              <input class="section__input" type="tel" name="telefoni_cislo" id="telefoni_cislo">
+              <label class="section__lable" for="email">Email</label>
+                <input class="section__input" type="email" name="email" id="email">
+            <div class="section__datum">
+              <div>
+                <label class="section__lable" for="datum">Datum</label>
+              <input class="section__input" type="date" name="datum" id="datum" required>
+              </div>
+              <div>
+                <label class="section__lable" for="cas">Čas</label>
+              <input class="section__input" type="time" name="cas" id="cas" >
+              </div>
+            </div>
+                <label class="section__lable" for="pocet_lidi">Počet lidí</label>
+              <input class="section__input" type="number" name="pocet_lidi" id="pocet_lidi" min="1" max="15" step="1" required>
+                <label class="section__lable" for="pozadavky">Speciální požadavky</label>
+              <input class="section__input" type="text" name="pozadavky" id="pozadavky">
+              <button class="button button--submit" type="submit" name="odeslat" id="odeslat">ODESLAT REZERVACI</button>
+            </form>
+        </div>
+      <img class="section__image" src="/obrazky/restaurant-6971288_1920.jpg" alt="restaurace">
+    </section>

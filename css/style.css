@@ -1,0 +1,240 @@
+/*celá stránka*/
+body{
+    background-image: linear-gradient(rgb(158, 245, 245), rgb(219, 226, 155));
+    display: block;
+    margin: 0;
+}
+/*hlavička*/
+.header{
+    border-bottom: solid;
+    background-image: url(/obrazky/hot-air-balloon-6088870_1920.jpg);
+    background-size: cover;
+    background-position: 50%; 
+    padding: 10%; 
+}
+section{
+    padding: 2%;
+}
+.header__tabs{
+    margin: 10%;
+    text-align: center;
+    color: black;
+
+}
+.header__title{
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+    text-align: center;
+}
+/*tlačítko*/
+.button{
+    text-decoration: none;
+    display: inline-block;
+    border: solid; 
+    padding: 10px 30px; 
+    margin: 10px;
+    background-color: aquamarine;
+    border-radius: 15px;
+    color: black
+}
+a:hover{
+    background-color: orange;
+    color: #ff0000;
+    background-image: none;
+}
+a:focus{
+    background-color: orange;
+    color: #ff0000;
+}
+/*jednotlivé části*/
+.section--special{
+    background-image: url(/obrazky/halloween-6704255_1280.png);
+    background-size: cover;
+}
+.section__unit-half{
+    background-color: rgba(250, 235, 215, 0.745);
+}
+.section__part{
+    border-bottom: solid;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+.section__title{
+    text-align: center;
+    font-size: 3em;
+}
+.section__text{
+    text-align: center;
+    padding-right: 5%;
+}
+.section__table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.section__image{
+    width: 100%;
+}
+/*zápatí*/
+.footer{
+    background-color: sandybrown;
+    text-align: center;
+}
+.footer__title{
+    font-size: 0.7em;
+    margin: 5px;
+}
+.footer__text{
+    font-size: 0.5em;
+    margin: 5px;
+}
+.footer__button{
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(255, 0, 128);
+    padding: 5px;
+    margin: 2%;
+}
+/*Jídelní lístek*/
+.section__title--size{
+    font-size: 3.5em;
+}
+/*Kontakty mapa*/
+iframe{
+    width: 100%;
+    height: 450px;
+}
+/*Kontakty - odkazy na sociální sítě*/
+.button--link-instagram{
+    color: white;
+    background-image: linear-gradient(yellow,rgb(238, 10, 139), blue);
+    border: none;
+}
+.button--link-facebook{
+    color: white;
+    background-color: blue;
+    border: none;
+}
+.button--link-tiktok{
+    color: white;
+    text-shadow: 5px 5px #ff0000;
+    text-shadow: -5px -5px #001aff;
+    background-color: black;
+    border: none;
+}
+.soc{
+    text-align: center;
+}
+/*Recenze a Rezervace*/
+form{
+    width: 100%;
+}
+.section__lable{
+    display: block;
+}
+.section__input{
+    width: 100%;
+    height: 50px;
+}
+.button--submit{
+    font-size: 1.5em;
+    object-position: center;
+}
+.section__datum{
+    display: flex;
+    gap: 5%;
+}
+.section__datum div{
+    flex: 1 1 50%;
+}
+.section__input--size{
+    height: 500px;
+}
+/*tablet*/
+@media screen and (min-width: 850px) {
+    body{
+        font-size: 1.5em;
+    }
+    .section{
+        display: flex;
+        gap: 2%;
+        border-bottom: solid black;
+        padding: 5%;
+    }
+    .section--colum{
+        flex-direction: column;
+    }
+    .section__part{
+        display: flex;
+    }
+    .section__image{
+        width: 50%;
+    }
+    .section__image--size{
+        width: 100%;
+    }
+    .section__title{
+        font-size: 2em;
+    }
+    .section__text{
+        font-size: 1em;
+    }
+    
+    .section__unit-half{
+        flex: 1 1 50%;
+    }
+    .mapa{
+        flex: 1 1 50%;
+    }
+    .section__form{
+        flex: 1 1 50%;
+    } 
+}   
+/*počítač*/
+@media screen and (min-width: 1100px){ 
+body{
+    font-size: 2em;
+}
+.section{
+    display: flex;
+    gap: 2%;
+    border-bottom: solid black;
+    padding: 50px;
+}
+.section--colum{
+    flex-direction: column;
+    flex: 1 1 50%;
+    font-size: 0.75em;
+    padding-left: 0;
+}
+.section__part{
+    display: flex;
+}
+.section__image{
+    width: 50%;
+}
+.section__image--size{
+    width: 100%;
+}
+.section__title{
+    font-size: 2em;
+}
+.section__text{
+    font-size: 1em;
+}
+
+.section__unit-half{
+    flex: 1 1 50%;
+    padding-top: 10%;
+}
+.mapa{
+    flex: 1 1 50%;
+}
+.section__form{
+    flex: 1 1 50%;
+}
+.recenze_obsah{
+    display: flex;
+}
+}
