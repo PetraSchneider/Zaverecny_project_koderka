@@ -52,13 +52,11 @@ a:focus{
     background-image: url(/obrazky/halloween-6704255_1280.png);
     background-size: cover;
 }
-.section__unit-half{
-    background-color: rgba(250, 235, 215, 0.745);
-}
 .section__part{
     border-bottom: solid;
     margin-bottom: 1%;
     margin-top: 1%;
+    background-color: rgba(250, 235, 215, 0.745);
 }
 .section__title{
     text-align: center;
@@ -79,6 +77,8 @@ a:focus{
 .footer{
     background-color: sandybrown;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .footer__title{
     font-size: 0.7em;
@@ -99,6 +99,9 @@ a:focus{
 /*Jídelní lístek*/
 .section__title--size{
     font-size: 3.5em;
+}
+.section__unit-half--second{
+    order: 2;    
 }
 /*Kontakty mapa*/
 iframe{
@@ -132,6 +135,7 @@ form{
 }
 .section__lable{
     display: block;
+    margin-top: 20px;
 }
 .section__input{
     width: 100%;
@@ -189,6 +193,7 @@ form{
     }
     .section__form{
         flex: 1 1 50%;
+        height: 100%;
     } 
 }   
 /*počítač*/
@@ -206,10 +211,11 @@ body{
     flex-direction: column;
     flex: 1 1 50%;
     font-size: 0.75em;
-    padding-left: 0;
 }
 .section__part{
     display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .section__image{
     width: 50%;
@@ -226,7 +232,19 @@ body{
 
 .section__unit-half{
     flex: 1 1 50%;
-    padding-top: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.section__unit-half--space{
+    padding-top: 0;
+}
+.section__unit-half--space p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.section__unit-half--space h2{
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 .mapa{
     flex: 1 1 50%;
